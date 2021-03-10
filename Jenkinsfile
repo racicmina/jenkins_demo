@@ -6,7 +6,7 @@ pipeline {
                 sh 'python --version'
             }
         }
-        stage('Python version') {
+        stage('PHP version') {
             agent { docker { image 'php' } }
             steps {
                 sh 'php --version'
